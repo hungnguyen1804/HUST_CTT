@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/scss/app.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="container">
+                <div class="nav-logo">
+                    <a href="">
+                        <img src="https://ctt.hust.edu.vn/Images/logo.png" alt="" class="nav-image">
+                    </a>
+                </div>
+                <div class="nav-search">
+                    <input type="text" placeholder="Tìm kiếm" class="input-text" />
+                    <img src="https://ctt.hust.edu.vn/Images/mask.svg" alt="" class="input-text_icon">
+                </div>
+                <div class="button">  
+                    <div class="logIn">
+                        <div class="btn-submit">
+                            <a href="" class="loginLink">Đăng nhập</a>
+                        </div>
+                    </div>
+                    <div class="logIn">
+                        <div class="btn-submit">
+                            <a href="" class="loginLink">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Navigator -->
+        <div class="menu">
+            <div class="navigator">
+                <div class="container">
+                    <div class="navbar">
+                       <ul class="navbar-header">
+                            <li class="dropdown">
+                                 <a href="#" class="activeMenu">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="activeMenu">
+                                    Thông báo
+                                </a>
+                                <ul class="child-menui">
+                                    <li>
+                                        <a href="#" class="child-menui-drop">Đại học</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="child-menui-drop">Sau đại học</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"class="child-menui-drop">Vừa làm vừa học</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="activeMenu">
+                                    Quy định
+                                </a>
+                                <ul class="child-menuj">
+                                    <li>
+                                        <a href="#" class="child-menuj-drop">Đại học</a>
+                                    </li>
+                                    <li>                                 
+                                        <a href="#" class="child-menuj-drop">Sau đại học</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="child-menuj-drop">Vừa làm vừa học</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="child-menuj-drop">Biểu mẫu</a>
+                                    </li>
+                                </ul>
+                            </li>                         
+                            <li class="dropdown">
+                                <a href="#" class="activeMenu">
+                                    Sổ tay
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="activeMenu">
+                                    Dịch vụ
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="activeMenu">
+                                    Nhập học
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="activeMenu">
+                                    Tra cứu
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="activeMenu">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Slider           -->
+        <div class="body">
+            <div class="home">
+                <div class="slider">
+                    <img id="img" onclick="changeImage()" src="img1.jpg" alt="">
+                </div>
+                <script>
+                    let index = 1;
+                    changeImage = function(){
+                        var imgs = ["img1.jpg", "img2.jpg"];
+                        document.getElementById('img').src = imgs[index];
+                        index++;
+                        if (index == 2) {
+                            index = 0;
+                        }
+                    }
+                    setInterval(changeImage, 5000);
+                </script>
+                <div class="center">
+                    <ul class="center-header">
+                        <li>Tổng hợp</li>
+                        <li>Đào tạo đại học</li>
+                        <li>Đào tạo sau đại học</li>
+                        <li>Vừa làm vừa học</li>
+                    </ul>
+                </div>
+                <div class="panels">
+                    <div class="infos">
+                        <div class="content">
+                            <h3>KẾ HOẠCH</h3>
+                            <div class="item">
+                                <div class="item-date">
+                                    <p class="month">Tháng 10</p>
+                                    <p class="date">15</p>
+                                </div>
+                                <div class="item-content">
+                                    <a href="#">
+                                        <p class="title">Đăng kí kế hoạch học tập kỳ 2 năm học 2021-2022</p>
+                                        <p class="datetime">00h00 ngày 15/10/2021</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-date">
+                                    <p class="month">Tháng 10</p>
+                                    <p class="date">15</p>
+                                </div>
+                                <div class="item-content">
+                                    <a href="#">
+                                        <p class="title">Đăng kí kế hoạch học tập kỳ 2 năm học 2021-2022</p>
+                                        <p class="datetime">00h00 ngày 15/10/2021</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-date">
+                                    <p class="month">Tháng 10</p>
+                                    <p class="date">15</p>
+                                </div>
+                                <div class="item-content">
+                                    <a href="#">
+                                        <p class="title">Đăng kí kế hoạch học tập kỳ 2 năm học 2021-2022</p>
+                                        <p class="datetime">00h00 ngày 15/10/2021</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3 class="news">TIN TỨC</h3>
+                            <div class="item">
+                                <div class="item-date">
+                                    <p class="month">Tháng 10</p>
+                                    <p class="date">15</p>
+                                </div>
+                                <div class="item-content">
+                                    <a href="#">
+                                        <p class="title">Đăng kí kế hoạch học tập kỳ 2 năm học 2021-2022</p>
+                                        <p class="datetime">00h00 ngày 15/10/2021</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-date">
+                                    <p class="month">Tháng 10</p>
+                                    <p class="date">15</p>
+                                </div>
+                                <div class="item-content">
+                                    <a href="#">
+                                        <p class="title">Đăng kí kế hoạch học tập kỳ 2 năm học 2021-2022</p>
+                                        <p class="datetime">00h00 ngày 15/10/2021</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-date">
+                                    <p class="month">Tháng 10</p>
+                                    <p class="date">15</p>
+                                </div>
+                                <div class="item-content">
+                                    <a href="#">
+                                        <p class="title">Đăng kí kế hoạch học tập kỳ 2 năm học 2021-2022</p>
+                                        <p class="datetime">00h00 ngày 15/10/2021</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p class="copyright">Bản quyền thuộc về Trường Đại học Bách Khoa Hà Nội</p>
+                <p class="addr">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+    </div>

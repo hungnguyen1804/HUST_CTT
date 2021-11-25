@@ -1,0 +1,197 @@
+html {
+box-sizing: border-box;
+font-size: 62.5%;
+}
+*{
+margin: 0;
+padding: 0;
+}
+*,*:before,*:after {
+box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button{
+outline: none;
+}
+input{
+line-height: normal;
+}
+label,
+button{
+cursor: pointer;
+}
+a {
+text-decoration: none;
+}
+img {
+display: block;
+max-width: 100%;
+}
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    counter-reset: #333;
+}
+.wrapper {
+
+}
+.header {
+    height: 120px;
+    background-image: url('https://ctt.hust.edu.vn/images/header.png');
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+}
+.nav-image {
+    margin-top: 10px;
+    margin-left: 210px;
+}
+.nav-search {
+    display: flex;
+}
+.input-text {
+    margin-top: 50px;
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    transform: translate(30px, -20px);
+    border: none;
+    &_icon {
+        margin-top: 40px;
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+.logIn {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: #AA261B;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.btn-submit {
+    font-weight: bold;
+    padding: 5px;
+}
+.loginLink {
+    color: white;
+}
+.menu {
+    background-color: #222;
+}
+.navbar-header {
+
+    height: 52.4px;
+    width: 100%;
+    display: flex;
+    margin: 0 210px;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #222222;
+}
+
+.activeMenu {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+.activeMenu:hover {
+    color: red;
+}
+.navbar-header li {
+    list-style: none;
+    margin-top: 10px;
+    
+    //border-bottom: 2px solid red;
+}
+.navbar-header li:hover  {
+    border-bottom: 2px solid red;
+}
+
+.child-menui {
+    position: absolute;
+    background-color: #363636;
+    margin-top: 21px;
+    border-bottom: 3px solid red;
+    width: 200px;
+    display: none;
+    //top: 100%;
+    //left: 0;
+   // right: 0;
+    &-drop {
+        color: white;
+        list-style-type: none;
+        background-color: #333;
+        margin-left: 20px;
+        text-transform: uppercase;
+        //padding: 2rem;
+        //left: 0;
+        //right: 0;
+        //margin-top: 2rem;
+        //display: none;
+    }
+}
+.child-menuj {
+    position: absolute;
+    background-color: #363636;
+    margin-top: 21px;
+    border-bottom: 3px solid red;
+    width: 200px;
+    display: none;
+    //top: 100%;
+    //left: 0;
+   // right: 0;
+    &-drop {
+        color: white;
+        list-style-type: none;
+        background-color: #333;
+        margin-left: 20px;
+        text-transform: uppercase;
+        //padding: 2rem;
+        //left: 0;
+        //right: 0;
+        //margin-top: 2rem;
+        //display: none;
+    }
+}
+
+.dropdown:hover .child-menui{
+    display: block;
+}
+.dropdown:hover:hover .child-menuj{
+     display: block;
+}
+.child-menui-drop:hover {
+    color: red;
+}
+.child-menuj-drop:hover {
+    color: red;
+}
+#img {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
